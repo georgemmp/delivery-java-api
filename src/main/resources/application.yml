@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      uri: ${DB_URL}
+security:
+  jwt:
+    token:
+      secret-key: 132eac5011b484d98966e8ec04af7e328a0416b7
+      expire-length: 3600000
+    password:
+      encoder:
+        secret: mysecret
+      iteration: 33
+      key-length: 256
